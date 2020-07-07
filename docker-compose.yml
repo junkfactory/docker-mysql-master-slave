@@ -7,7 +7,7 @@ services:
     container_name: "mysql_master"
     restart: "no"
     ports:
-      - 4406:3306
+      - 3306:3306
     volumes:
       - ./master/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
       - ./master/data:/var/lib/mysql
